@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # Sincroniza o código da sua máquina com o contêiner para desenvolvimento
+      - .:/usr/src/app
+      # Impede que a pasta node_modules local sobrescreva a do contêiner
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
