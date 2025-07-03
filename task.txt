@@ -1,0 +1,10 @@
+1.Escolha uma aplicação simples em Node.js ou Ruby on Rails.
+
+2.Crie um Dockerfile que:
+    1.Utilize uma imagem base oficial do Node.js ou Ruby.
+    2.Copie os arquivos da sua aplicação para dentro do contêiner.
+    3.Instale as dependências necessárias usando o gerenciador de pacotes correspondente (npm para Node.js ou bundler para Ruby).
+    4.Exponha a porta que a aplicação utiliza.
+    5.Defina o comando para iniciar a aplicação.
+
+3.Teste sua imagem localmente usando docker build e docker run.
